@@ -1,2 +1,2 @@
 # CarRentalSystemSWU
-A car rental wen system using Nextjs
+A car rental web system using Nextjs+TypeScript
