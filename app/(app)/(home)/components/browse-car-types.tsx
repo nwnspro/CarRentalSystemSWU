@@ -17,7 +17,7 @@ export function BrowseCarTypes() {
     <section>
       <div className="mx-auto w-full max-w-none px-5 sm:max-w-[90%] sm:px-0 2xl:max-w-8xl">
         <h2 className="text-balance text-[19px] font-bold sm:text-[21px] lg:text-[23px]">
-          Pick Your Perfect Match
+          Our Car Types
         </h2>
         <div className="pt-6">
           <div className="relative">

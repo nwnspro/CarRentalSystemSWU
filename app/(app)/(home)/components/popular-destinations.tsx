@@ -15,7 +15,7 @@ export function PopularDestinations() {
     <section>
       <div className="mx-auto w-full max-w-none px-5 sm:max-w-[90%] sm:px-0 2xl:max-w-8xl">
         <h2 className="text-balance text-[19px] font-bold sm:text-[21px] lg:text-[23px]">
-          Where to Rent Next
+          Popular Destinations
         </h2>
         <div className="pt-6">
           <div className="group grid grid-cols-2 gap-x-5 gap-y-7 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-8 md:grid-cols-5 [&_a:hover_~_*_img]:!opacity-100">

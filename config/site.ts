@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Carhive",
+  name: "Carhub",
   url: "https://carhive.eduam.dev",
   author: {
     name: "eduamdev",

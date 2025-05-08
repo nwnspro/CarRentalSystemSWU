@@ -10,7 +10,7 @@ import {
   timestamp,
 } from "drizzle-orm/pg-core"
 
-export const locationsTable = pgTable("locations", {
+export var locationsTable = pgTable("locations", {
   id: integer("id").primaryKey().generatedAlwaysAsIdentity(),
   slug: text("slug").notNull().unique(),
   name: text("name").notNull(),
@@ -25,7 +25,7 @@ export const locationsTable = pgTable("locations", {
     .$onUpdate(() => new Date()),
 })
 
-export const carsTable = pgTable("cars", {
+export var carsTable = pgTable("cars", {
   id: integer("id").primaryKey().generatedAlwaysAsIdentity(),
   slug: text("slug").notNull().unique(),
   name: text("name").notNull(),

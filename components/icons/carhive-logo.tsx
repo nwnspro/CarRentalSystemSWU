@@ -24,5 +24,5 @@ export function CarhiveLogo(props: React.HTMLAttributes<SVGElement>) {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }

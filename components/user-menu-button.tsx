@@ -55,28 +55,6 @@ export function UserMenuButton() {
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuGroup>
-              <DropdownMenuItem className="p-0">
-                <a
-                  href={githubUrl}
-                  className="w-full px-2 py-[6px]"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Gift Cards
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem className="p-0">
-                <a
-                  href={githubUrl}
-                  className="w-full px-2 py-[6px]"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Help Center
-                </a>
-              </DropdownMenuItem>
-            </DropdownMenuGroup>
           </DropdownMenuContent>
         </DropdownMenu>
       </SignedOut>
