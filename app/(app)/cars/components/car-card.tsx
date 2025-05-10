@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { SelectCar } from "@/db/schema"
 
 import { formatAmountForDisplay } from "@/lib/utils"
@@ -22,8 +23,8 @@ export async function CarCard({ car }: CarCardProps) {
   return (
     <article className="overflow-hidden rounded-[10px] border border-black/[0.08] bg-white text-sm shadow-sm">
       <div className="relative aspect-video h-40 w-full">
-        <CldImage
-          src={car.imageUrl}
+        <Image
+          src="/assets/images/details/minivan.jpeg"
           alt={car.name}
           fill
           className="object-cover"

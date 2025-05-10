@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation"
 import type { Stripe } from "stripe"
 
 import { stripe } from "@/lib/stripe"
@@ -13,14 +14,16 @@ export default async function ResultPage({
   const paymentIntent: Stripe.PaymentIntent =
     await stripe.paymentIntents.retrieve(searchParams.payment_intent)
 
-  const formattedContent: string = JSON.stringify(paymentIntent, null, 2)
+  // 如果支付成功，重定向到首页
+  if (paymentIntent.status === "succeeded") {
+    redirect("/")
+  }
 
+  // 如果支付失败，显示错误信息
   return (
     <>
       <h2>Status: {paymentIntent.status}</h2>
-      <h3>Payment Intent response:</h3>
-
-      <pre>{formattedContent}</pre>
+      <h3>Payment failed. Please try again.</h3>
     </>
   )
 }

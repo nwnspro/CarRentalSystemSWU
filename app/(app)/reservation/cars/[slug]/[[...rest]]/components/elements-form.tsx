@@ -113,6 +113,9 @@ function CheckoutForm({
       if (confirmError) {
         setPayment({ status: "error" })
         setErrorMessage(confirmError.message ?? "An unknown error occurred")
+      } else {
+        // 设置支付成功标记
+        sessionStorage.setItem("fromPayment", "true")
       }
     } catch (err) {
       const { message } = err as StripeError

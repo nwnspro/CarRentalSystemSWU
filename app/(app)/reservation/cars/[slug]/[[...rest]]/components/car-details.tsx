@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { SelectCar } from "@/db/schema"
 
 import CldImage from "@/components/cld-image"
@@ -7,8 +8,8 @@ export function CarDetails({ car }: { car: SelectCar }) {
   return (
     <div className="grid grid-cols-1 gap-5 min-[360px]:flex">
       <div className="relative aspect-square w-[100px] shrink-0">
-        <CldImage
-          src={car.imageUrl}
+        <Image
+          src="/assets/images/details/minivan.jpeg"
           alt={car.name}
           className="rounded-xl object-cover"
           fill

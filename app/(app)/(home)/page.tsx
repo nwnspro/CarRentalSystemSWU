@@ -1,3 +1,4 @@
+import { PaymentSuccessToast } from "@/components/payment-success-toast"
 import { SiteHeader } from "@/components/site-header"
 
 import { BrowseCarTypes } from "./components/browse-car-types"
