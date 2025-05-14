@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/site-header"
 import { BrowseCarTypes } from "./components/browse-car-types"
 import { Hero } from "./components/hero"
 import { PopularDestinations } from "./components/popular-destinations"
+import { RecommendedCar } from "./components/recommended-car"
 import { Testimonials } from "./components/testimonials"
 
 export default function HomePage() {
@@ -21,6 +22,9 @@ export default function HomePage() {
         </div>
         <div className="py-12 lg:py-16">
           <PopularDestinations />
+        </div>
+        <div className="py-12 lg:py-16">
+          <RecommendedCar />
         </div>
         <div className="pt-12 lg:pt-14">
           <Testimonials />
